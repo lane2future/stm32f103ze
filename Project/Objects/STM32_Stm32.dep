@@ -20,6 +20,12 @@ I (..\Libraries\stm32f10x.h)(0x5E708C25)
 I (..\Libraries\core_cm3.h)(0x5E708C24)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Libraries\system_stm32f10x.h)(0x5E708C25)
+F (..\Application\KEY\key.c)(0x6205D537)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries -I ..\Application\LED -I ..\Application\BEEP-IC:\Users\juice\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_HD-o .\objects\key.o --omf_browse .\objects\key.crf --depend .\objects\key.d)
+I (..\Application\KEY\key.h)(0x6205D536)
+I (..\Libraries\stm32f10x.h)(0x5E708C25)
+I (..\Libraries\core_cm3.h)(0x5E708C24)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\Libraries\system_stm32f10x.h)(0x5E708C25)
 F (..\Core\main.c)(0x6205D229)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries -I ..\Application\LED -I ..\Application\BEEP-IC:\Users\juice\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="536" -DSTM32F10X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\Application\LED\led.h)(0x6205D247)
 I (..\Libraries\stm32f10x.h)(0x5E708C25)

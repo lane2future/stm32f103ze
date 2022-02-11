@@ -15,7 +15,7 @@ void beep_init(void)
     RCC->APB2ENR |= 1<<3;
     
     GPIOB->CRH &= 0xFFFFFFF0;
-    GPIOB->CRH |= 0x0000000B;
+    GPIOB->CRH |= 0x00000003;
 
-    GPIOB->ODR |= 1<<8;
+    GPIOB->ODR &= ~(1<<8);
 }

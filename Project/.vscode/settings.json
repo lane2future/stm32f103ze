@@ -2,6 +2,7 @@
     "files.associations": {
         "led.h": "c",
         "beep.h": "c",
-        "stm32f10x.h": "c"
+        "stm32f10x.h": "c",
+        "key.h": "c"
     }
 }
