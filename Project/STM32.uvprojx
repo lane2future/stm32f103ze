@@ -337,9 +337,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define></Define>
+              <Define>STM32F10X_HD</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries;..\Application\LED;..\Application\BEEP</IncludePath>
+              <IncludePath>..\Libraries;..\Application\LED;..\Application\BEEP;..\Application\KEY;..\Application\SYS</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -417,6 +417,11 @@
               <FileName>key.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Application\KEY\key.c</FilePath>
+            </File>
+            <File>
+              <FileName>sys.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Application\SYS\sys.c</FilePath>
             </File>
           </Files>
         </Group>

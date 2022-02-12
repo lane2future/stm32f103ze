@@ -6,12 +6,14 @@
                 "e:\\stm32f103ze\\Libraries",
                 "e:\\stm32f103ze\\Application\\LED",
                 "e:\\stm32f103ze\\Application\\BEEP",
+                "e:\\stm32f103ze\\Application\\KEY",
+                "e:\\stm32f103ze\\Application\\SYS",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include\\rw",
-                "e:\\stm32f103ze\\Application\\KEY",
                 "e:\\stm32f103ze\\Core"
             ],
             "defines": [
+                "STM32F10X_HD",
                 "__CC_ARM",
                 "__arm__",
                 "__align(x)=",

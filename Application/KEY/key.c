@@ -17,11 +17,31 @@ void key_init(void)
 	RCC->APB2ENR |= 1<<0;
     RCC->APB2ENR |= 1<<6;
 
-    GPIOA->CRL &= 0xFFFFFFF0;
-    GPIOA->CRL |= 0x00000008;
-    GPIOE->CRL &= 0xFFF000FF;
-    GPIOE->CRL |= 0x00088800;
+    GPIO_A->CRL &= 0xFFFFFFF0;
+    GPIO_A->CRL |= 0x00000008;
+    GPIO_E->CRL &= 0xFFF000FF;
+    GPIO_E->CRL |= 0x00088800;
 
-    GPIOA->ODR &= ~(1<<0);
-    GPIOE->ODR |= 7<<2;
+    GPIO_A->ODR &= ~(1<<0);
+    GPIO_E->ODR |= 7<<2;
+}
+
+/***************************************
+ *
+ * KEY debounce
+ *
+ * @param	none.
+ *
+ * @return	which key
+ *
+ * @note	
+ **************************************/
+u8 key_debounce(void)
+{
+    //static u8 key_flag = 0;
+    if(WAKE_UP)
+    {
+		
+    }
+	return 0;
 }
