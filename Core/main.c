@@ -5,10 +5,11 @@
 
 int main(void)
 {
+	u8 key = 0;
+	u32 i = 0;
 	led_init();
 	beep_init();
 	key_init();
-	u8 key = 0, i = 0, j = 0;
 	while(1)
 	{
 		key = key_debounce();

@@ -6,3 +6,4 @@
 .\objects\led.o: ..\Libraries\system_stm32f10x.h
 .\objects\led.o: ..\Libraries\lane_stm32f10x.h
 .\objects\led.o: ..\Application\SYS\sys.h
+.\objects\led.o: ..\Application\DELAY\delay.h

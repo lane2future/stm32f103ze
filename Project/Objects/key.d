@@ -6,3 +6,4 @@
 .\objects\key.o: ..\Libraries\system_stm32f10x.h
 .\objects\key.o: ..\Libraries\lane_stm32f10x.h
 .\objects\key.o: ..\Application\SYS\sys.h
+.\objects\key.o: ..\Application\DELAY\delay.h

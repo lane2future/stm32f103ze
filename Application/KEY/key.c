@@ -53,7 +53,7 @@ u8 key_debounce(void)
         }
         else if((WAKE_UP == 0) && KEY0 && KEY1 && KEY2)
         {
-            key_flag == 0;
+            key_flag = 0;
         }
     }
 	return 0;
