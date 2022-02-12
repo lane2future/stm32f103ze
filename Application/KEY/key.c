@@ -1,4 +1,5 @@
 #include "key.h"
+#include "delay.h"
 /***************************************
  *
  * initialize KEY
@@ -38,10 +39,22 @@ void key_init(void)
  **************************************/
 u8 key_debounce(void)
 {
-    //static u8 key_flag = 0;
-    if(WAKE_UP)
+    static u8 key_flag = 0;
+    if((WAKE_UP || (KEY0 == 0) || (KEY1 == 0) || (KEY2 == 0)) && key_flag == 0)
     {
-		
+        DelayMs(20);
+        if(WAKE_UP || (KEY0 == 0) || (KEY1 == 0) || (KEY2 == 0))
+        {
+            key_flag = 1;
+            if(WAKE_UP)return 1;
+            else if(KEY0 == 0)return 2;
+            else if(KEY1 == 0)return 3;
+            else if(KEY2 == 0)return 4;
+        }
+        else if((WAKE_UP == 0) && KEY0 && KEY1 && KEY2)
+        {
+            key_flag == 0;
+        }
     }
 	return 0;
 }

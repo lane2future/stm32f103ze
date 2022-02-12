@@ -5,3 +5,4 @@
 .\objects\beep.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\beep.o: ..\Libraries\system_stm32f10x.h
 .\objects\beep.o: ..\Libraries\lane_stm32f10x.h
+.\objects\beep.o: ..\Application\SYS\sys.h

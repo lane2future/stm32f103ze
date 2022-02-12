@@ -5,5 +5,6 @@
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\main.o: ..\Libraries\system_stm32f10x.h
 .\objects\main.o: ..\Libraries\lane_stm32f10x.h
+.\objects\main.o: ..\Application\SYS\sys.h
 .\objects\main.o: ..\Application\BEEP\beep.h
 .\objects\main.o: ..\Application\KEY\key.h

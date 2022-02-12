@@ -5,3 +5,4 @@
 .\objects\key.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\key.o: ..\Libraries\system_stm32f10x.h
 .\objects\key.o: ..\Libraries\lane_stm32f10x.h
+.\objects\key.o: ..\Application\SYS\sys.h

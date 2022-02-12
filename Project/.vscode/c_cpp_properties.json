@@ -8,6 +8,7 @@
                 "e:\\stm32f103ze\\Application\\BEEP",
                 "e:\\stm32f103ze\\Application\\KEY",
                 "e:\\stm32f103ze\\Application\\SYS",
+                "e:\\stm32f103ze\\Application\\DELAY",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include\\rw",
                 "e:\\stm32f103ze\\Core"

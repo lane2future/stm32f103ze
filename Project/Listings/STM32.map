@@ -41,8 +41,11 @@ Removing Unused input sections from the image.
     Removing system_stm32f10x.o(i.SystemCoreClockUpdate), (164 bytes).
     Removing system_stm32f10x.o(.data), (20 bytes).
     Removing key.o(i.key_debounce), (12 bytes).
+    Removing key.o(.data), (1 bytes).
+    Removing delay.o(i.DelayMs), (34 bytes).
+    Removing delay.o(i.DelayUs), (22 bytes).
 
-5 unused section(s) (total 20708 bytes) removed from the image.
+8 unused section(s) (total 20765 bytes) removed from the image.
 
 ==============================================================================
 
@@ -52,22 +55,23 @@ Image Symbol Table
 
     Symbol Name                              Value     Ov Type        Size  Object(Section)
 
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12b.o ABSOLUTE
     ..\Application\BEEP\beep.c               0x00000000   Number         0  beep.o ABSOLUTE
+    ..\Application\DELAY\delay.c             0x00000000   Number         0  delay.o ABSOLUTE
     ..\Application\KEY\key.c                 0x00000000   Number         0  key.o ABSOLUTE
     ..\Application\LED\led.c                 0x00000000   Number         0  led.o ABSOLUTE
     ..\Application\SYS\sys.c                 0x00000000   Number         0  sys.o ABSOLUTE
@@ -231,30 +235,30 @@ Memory Map of the image
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x00000130   Data   RO           19    RESET               startup_stm32f10x_hd.o
-    0x08000130   0x08000130   0x00000000   Code   RO          144  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x08000130   0x08000130   0x00000004   Code   RO          147    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x08000134   0x08000134   0x00000004   Code   RO          150    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x08000138   0x08000138   0x00000000   Code   RO          152    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x08000138   0x08000138   0x00000000   Code   RO          154    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x08000138   0x08000138   0x00000008   Code   RO          155    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x08000140   0x08000140   0x00000004   Code   RO          162    .ARM.Collect$$$$0000000E  mc_w.l(entry12b.o)
-    0x08000144   0x08000144   0x00000000   Code   RO          157    .ARM.Collect$$$$0000000F  mc_w.l(entry10a.o)
-    0x08000144   0x08000144   0x00000000   Code   RO          159    .ARM.Collect$$$$00000011  mc_w.l(entry11a.o)
-    0x08000144   0x08000144   0x00000004   Code   RO          148    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000130   0x08000130   0x00000000   Code   RO          166  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000130   0x08000130   0x00000004   Code   RO          169    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x08000134   0x08000134   0x00000004   Code   RO          172    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x08000138   0x08000138   0x00000000   Code   RO          174    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x08000138   0x08000138   0x00000000   Code   RO          176    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x08000138   0x08000138   0x00000008   Code   RO          177    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000140   0x08000140   0x00000004   Code   RO          184    .ARM.Collect$$$$0000000E  mc_w.l(entry12b.o)
+    0x08000144   0x08000144   0x00000000   Code   RO          179    .ARM.Collect$$$$0000000F  mc_w.l(entry10a.o)
+    0x08000144   0x08000144   0x00000000   Code   RO          181    .ARM.Collect$$$$00000011  mc_w.l(entry11a.o)
+    0x08000144   0x08000144   0x00000004   Code   RO          170    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
     0x08000148   0x08000148   0x00000024   Code   RO           20    .text               startup_stm32f10x_hd.o
-    0x0800016c   0x0800016c   0x00000024   Code   RO          163    .text               mc_w.l(init.o)
+    0x0800016c   0x0800016c   0x00000024   Code   RO          185    .text               mc_w.l(init.o)
     0x08000190   0x08000190   0x00000008   Code   RO           24    i.SetSysClock       system_stm32f10x.o
     0x08000198   0x08000198   0x000000e0   Code   RO           25    i.SetSysClockTo72   system_stm32f10x.o
     0x08000278   0x08000278   0x00000060   Code   RO           27    i.SystemInit        system_stm32f10x.o
-    0x080002d8   0x080002d8   0x0000000e   Code   RO          167    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x080002e6   0x080002e6   0x00000002   Code   RO          168    i.__scatterload_null  mc_w.l(handlers.o)
-    0x080002e8   0x080002e8   0x0000000e   Code   RO          169    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x080002d8   0x080002d8   0x0000000e   Code   RO          189    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x080002e6   0x080002e6   0x00000002   Code   RO          190    i.__scatterload_null  mc_w.l(handlers.o)
+    0x080002e8   0x080002e8   0x0000000e   Code   RO          191    i.__scatterload_zeroinit  mc_w.l(handlers.o)
     0x080002f6   0x080002f6   0x00000002   PAD
-    0x080002f8   0x080002f8   0x0000003c   Code   RO           87    i.beep_init         beep.o
-    0x08000334   0x08000334   0x0000007c   Code   RO          103    i.key_init          key.o
+    0x080002f8   0x080002f8   0x0000003c   Code   RO           90    i.beep_init         beep.o
+    0x08000334   0x08000334   0x0000007c   Code   RO          106    i.key_init          key.o
     0x080003b0   0x080003b0   0x00000070   Code   RO           65    i.led_init          led.o
-    0x08000420   0x08000420   0x00000010   Code   RO          132    i.main              main.o
-    0x08000430   0x08000430   0x00000010   Data   RO          165    Region$$Table       anon$$obj.o
+    0x08000420   0x08000420   0x00000010   Code   RO          154    i.main              main.o
+    0x08000430   0x08000430   0x00000010   Data   RO          187    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08000440, Size: 0x00000400, Max: 0x00010000, ABSOLUTE)

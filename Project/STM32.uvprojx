@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries;..\Application\LED;..\Application\BEEP;..\Application\KEY;..\Application\SYS</IncludePath>
+              <IncludePath>..\Libraries;..\Application\LED;..\Application\BEEP;..\Application\KEY;..\Application\SYS;..\Application\DELAY</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -422,6 +422,11 @@
               <FileName>sys.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Application\SYS\sys.c</FilePath>
+            </File>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Application\DELAY\delay.c</FilePath>
             </File>
           </Files>
         </Group>

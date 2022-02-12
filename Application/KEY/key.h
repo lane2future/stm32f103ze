@@ -10,4 +10,5 @@
 
 
 void key_init(void);
+u8 key_debounce(void);
 #endif
