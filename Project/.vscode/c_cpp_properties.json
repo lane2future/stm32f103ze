@@ -3,15 +3,15 @@
         {
             "name": "Stm32",
             "includePath": [
-                "e:\\stm32f103ze\\Libraries",
-                "e:\\stm32f103ze\\Application\\LED",
-                "e:\\stm32f103ze\\Application\\BEEP",
-                "e:\\stm32f103ze\\Application\\KEY",
-                "e:\\stm32f103ze\\Application\\SYS",
-                "e:\\stm32f103ze\\Application\\DELAY",
+                "d:\\project\\STM32\\remote_repository\\stm32f103ze\\Libraries",
+                "d:\\project\\STM32\\remote_repository\\stm32f103ze\\Application\\LED",
+                "d:\\project\\STM32\\remote_repository\\stm32f103ze\\Application\\BEEP",
+                "d:\\project\\STM32\\remote_repository\\stm32f103ze\\Application\\KEY",
+                "d:\\project\\STM32\\remote_repository\\stm32f103ze\\Application\\SYS",
+                "d:\\project\\STM32\\remote_repository\\stm32f103ze\\Application\\DELAY",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include\\rw",
-                "e:\\stm32f103ze\\Core"
+                "d:\\project\\STM32\\remote_repository\\stm32f103ze\\Core"
             ],
             "defines": [
                 "STM32F10X_HD",

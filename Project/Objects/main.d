@@ -6,6 +6,8 @@
 .\objects\main.o: ..\Libraries\system_stm32f10x.h
 .\objects\main.o: ..\Libraries\lane_stm32f10x.h
 .\objects\main.o: ..\Application\SYS\sys.h
-.\objects\main.o: ..\Application\DELAY\delay.h
+.\objects\main.o: ..\Application\LED\led.h
 .\objects\main.o: ..\Application\BEEP\beep.h
+.\objects\main.o: ..\Application\SYS\sys.h
+.\objects\main.o: ..\Application\DELAY\delay.h
 .\objects\main.o: ..\Application\KEY\key.h
